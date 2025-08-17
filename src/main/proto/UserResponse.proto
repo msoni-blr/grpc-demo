@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package com.ms;
+option java_multiple_files = true;
+option java_outer_classname = "UserResponseProto";
+option java_package = "com.ms";
+
+message UserResponse {
+    // Response message for the user
+    string message = 1;
+    // Status of the response (e.g., "success", "error")
+    string status = 2;
+    // Error details if any
+    optional string error_message = 3; 
+}

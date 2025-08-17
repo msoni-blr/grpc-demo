@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package com.ms;
+option java_multiple_files = true;
+option java_outer_classname = "AddressProto";
+option java_package = "com.ms";
+
+message Address {
+    // Street address (e.g., "123 Main St")
+    optional string street = 1;
+    // City name (e.g., "San Francisco")
+    optional string city = 2;
+    // State or province (e.g., "CA")
+    optional string state = 3;
+    // ZIP or postal code (e.g., "94105")
+    optional string zip_code = 4;
+    
+    enum CountryCode {
+        // Unknown country
+        UNKNOWN = 0;
+        // United States
+        US = 1;
+        // India
+        IN = 2;
+        // United Kingdom
+        UK = 3;
+        // Canada
+        CA = 4;
+        // Australia
+        AU = 5;
+    }
+    
+    // Country code
+    optional CountryCode country_code = 5; 
+}
