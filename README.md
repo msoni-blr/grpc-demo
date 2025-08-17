@@ -1,4 +1,3 @@
 # grpc-demo  
 
-Resources: https://youtube.com/playlist?list=PLI5t0u6ye3FGXJMh5kU2RvN0xrul67p7R&si=v4qB4LaaVBRGt1K-  
-
+Resources: https://youtube.com/playlist?list=PLy_6D98if3UJd5hxWNfAqKMr15HZqFnqf&si=1Un62QjARqvI9D-P  
