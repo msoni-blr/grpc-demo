@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package com.ms;
+option java_multiple_files = true;
+option java_outer_classname = "UserProto";
+option java_package = "com.ms";
+
+import "Address.proto";
+
+message User {
+    // Unique user ID
+    uint32 id = 1;
+    // Email address of the user
+    string email = 2;
+    // First name of the user
+    optional string first_name = 3;
+    // Last name of the user
+    optional string last_name = 4;
+    // Phone number of the user
+    optional uint32 phone = 5;
+    // Address details
+    repeated Address address = 6;
+}
